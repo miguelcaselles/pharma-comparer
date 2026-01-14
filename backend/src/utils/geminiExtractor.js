@@ -57,8 +57,8 @@ export async function extractTrialData(trialText, trialIdentifier = 'A') {
       throw new Error('GEMINI_API_KEY not configured in environment variables');
     }
 
-    // Use Gemini Pro model
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-pro' });
+    // Use Gemini Pro model - using gemini-pro for text extraction
+    const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
 
     // Create detailed prompt for extraction
     const prompt = `You are a medical data extraction specialist. Extract structured data from the following clinical trial information.

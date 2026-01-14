@@ -89,7 +89,7 @@ export async function extractFromPDFs(pdfPaths, trialIdentifier = 'A') {
 
     // Use Gemini Pro Vision model for PDF analysis
     const model = genAI.getGenerativeModel({
-      model: 'gemini-1.5-pro',
+      model: 'gemini-1.5-flash', // Using flash model for PDF analysis
       generationConfig: {
         temperature: 0.1, // Lower temperature for more consistent extraction
         topP: 0.8,
