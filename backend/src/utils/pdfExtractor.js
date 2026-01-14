@@ -87,9 +87,9 @@ export async function extractFromPDFs(pdfPaths, trialIdentifier = 'A') {
     console.log('⏳ Waiting for Gemini to process files...');
     await waitForFilesActive(uploadedFiles);
 
-    // Use Gemini Pro Vision model for PDF analysis
+    // Use Gemini Flash model for PDF analysis - compatible with v1beta API
     const model = genAI.getGenerativeModel({
-      model: 'gemini-1.5-flash', // Using flash model for PDF analysis
+      model: 'gemini-1.5-flash-latest', // Using flash-latest for v1beta compatibility
       generationConfig: {
         temperature: 0.1, // Lower temperature for more consistent extraction
         topP: 0.8,
