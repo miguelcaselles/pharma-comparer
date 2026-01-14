@@ -1,0 +1,42 @@
+{
+  "trial_metadata": {
+    "trial_name": "PREVAIL",
+    "nct_id": "NCT01212991",
+    "publication_year": 2014,
+    "indication": "Metastatic Castration-Resistant Prostate Cancer",
+    "phase": "Phase III"
+  },
+  "arms_description": {
+    "experimental_arm": "Enzalutamide 160 mg/day",
+    "control_arm": "Placebo",
+    "n_experimental": 872,
+    "n_control": 845
+  },
+  "baseline_characteristics": {
+    "median_age_exp": 72.0,
+    "median_age_ctrl": 71.0,
+    "sex_male_percentage_exp": 100,
+    "sex_male_percentage_ctrl": 100,
+    "ecog_0_percentage_exp": 67.0,
+    "ecog_0_percentage_ctrl": 67.0
+  },
+  "efficacy_outcomes": {
+    "primary_endpoint_data": {
+      "endpoint_name": "Overall Survival",
+      "hazard_ratio": 0.71,
+      "ci_lower_95": 0.60,
+      "ci_upper_95": 0.84,
+      "p_value": 0.0001,
+      "median_exp_months": 32.4,
+      "median_ctrl_months": 30.2
+    }
+  },
+  "safety_toxicity": {
+    "any_grade_3_5_ae_rate_exp": 43.0,
+    "any_grade_3_5_ae_rate_ctrl": 37.0,
+    "discontinuation_rate_exp": 6.0,
+    "discontinuation_rate_ctrl": 4.0,
+    "serious_ae_rate_exp": 43.0,
+    "serious_ae_rate_ctrl": 37.0
+  }
+}
